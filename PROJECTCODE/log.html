@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DyB login</title>
+
+    <link rel="stylesheet" href="log.css">
+</head>
+<body>
+
+
+    <script>
+
+        function expand(){
+
+            const container = document.QuerySelector('.container');
+
+            container.style.animationName = "anime";
+        }
+
+    </script>
+
+    <div class="container" >  <!-- onclick="this.classList.add('animated')" -->
+
+        <img src="logo/dyb.png" class = "logo" alt="logo" />
+
+        <form action="log.php" method="post">
+
+                    <div class="username">			
+                    
+                        <label for="username" class="lab1">Username</label>
+                        <input type="text" id="username" name="username" required >
+                        <span></span>
+                    </div>
+                    
+	
+                    <div class="psd">
+
+                        <label for="psd" class="psdl">Password</label>
+                        <input type="password" name="password" id="psd" required>
+                        <span></span>
+
+                    </div>
+                   
+            <div class="but">
+            <button type="submit" id="sub">Submit</button>
+            </div>
+
+
+
+        </form>
+
+
+
+
+    </div>
+    <script>
+    const div=document.querySelector(".container");
+    div.addEventListener('click',_=>div.classList.add('animated'));
+
+  
+</script>
+
+
+</body>
+</html>

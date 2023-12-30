@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>DyB Login</title>
+    <meta name="viewport" width="device-width, initial-scale=1;">
+    <link href="bootstrap-5.2.0-dist/css/bootstrap.css" rel="stylesheet">
+    <script src="bootstrap-5.2.0-dist/js/bootstrap.js"></script>
+    <style>
+  /* Apply styles to the entire body */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color:white;
+     background-color: black;                   /*  image:url("logo3.jpg"); */
+            background-size: cover;
+            background-repeat:no-repeat;
+            height:10vh;
+}
+
+/* Center the form on the page */
+#form {
+    width: 80%;
+    max-width: 600px;
+    margin: 30px auto;
+    background-color:black;
+    color:white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Style form labels */
+label {
+    font-weight: bold;
+}
+
+/* Style input fields */
+input[type="text"],
+input[type="password"],
+input[type="date"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Style radio buttons */
+input[type="radio"] {
+    margin-right: 5px;
+}
+
+/* Style textarea */
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    resize: vertical;
+}
+
+/* Center the submit button */
+button[type="submit"] {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Add hover effect to the submit button */
+button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+/* Centered header */
+.header {
+    text-align: center;
+    padding: 20px;
+    background-color: #007bff;
+    color: white;
+}
+
+/* Centered logo */
+#headimg {
+    display: block;
+    margin: 0 auto;
+    max-width: 100px;
+}
+
+/* Centered heading */
+#heading {
+    margin-top: 10px;
+}
+
+/* Clear margin from top of form elements */
+.formb > form > * {
+    margin-top: 0;
+}
+
+</style>
+
+
+</head>
+<body>
+
+    <form action="upl.php" id="form" method="post">
+        <label for="name">Name</label>
+                <input type="text" name="name" id="name" placeholder="Name" required>
+                
+                <br><br>
+               
+               
+               
+        
+                <label for="gender" >Gender :</label>
+                <input type="radio" name="gender[]" id="gender" value="Male" required>Male
+                <input type="radio"  name="gender[]" id="gender" value="Female" required>Female
+				<br>
+				
+                <br><br>
+
+                <label for="dob">Date of Birth :</label>
+                <input type="date"  name="dob" id="dob" required>
+                
+                <br><br>
+                
+                <label for="age">Age :</label>
+                <input type="text" name="age" id="age" required>
+                
+                <br>
+                <label for="email" >Email</label>
+                <input type="text" name="mail" id="email" placeholder="Email" required>
+                
+                <br>
+
+                <label for="phn" >Mobile No</label>
+                <input type="text" name="phn" id="phn" placeholder="mobile Number" required>
+                
+                <br>
+                <label for="aadhar no" >Aadhar No</label>
+                <input type="text" name="addhar" id="aadharno" placeholder="Aadhar Number" required>
+               
+                
+                <br>
+
+                <label for="address">Address</label><br>
+                <textarea cols="50" rows="5" id="address" name="add" placeholder="address" required></textarea>
+                
+				<br>
+
+        <hr>
+        <h5 class="text-center">Set The Username and Password to login</h5>
+
+            <label for="uname" >Username</label>
+            <input for="text"  name="uname" id="uname" placeholder="Username" required>
+            
+			<br>
+            <label for="psd" >Password</label>
+            <input for="password"  name="psd" id="psd" placeholder="password" required>
+            
+            <br>
+			<label for="cpsd" >Confirm Password</label>
+			<input type="password" name="confirm" id="cpsd" required>
+			
+			<br>
+
+
+        <center><button type="submit">Submit</button> </center>
+    </form>
+</div>
+</body>
+</html>

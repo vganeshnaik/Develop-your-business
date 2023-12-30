@@ -1,0 +1,228 @@
+body{
+    background-color:  rgb(0,7,24);
+    border:2px solid black;
+    height:99vh;
+    overflow: hidden;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    background-color: black;
+    margin: 0 auto;
+    width:7%;
+    height: auto;
+    border: 2px solid blue;
+     border-radius: 50%; 
+    padding:20px;
+    overflow: hidden;
+    border: double 2px transparent;
+    background-image:linear-gradient(black,black),linear-gradient(45deg, rgb(23, 208, 215), rgb(4, 94, 249));
+    background-origin:border-box;
+    background-clip:padding-box, border-box;
+    cursor: pointer;
+    box-shadow: 0px 0px 3px rgb(18, 197, 217);
+    transition: width 2s, height 2s;
+	 
+    
+}
+
+
+
+.container .logo{
+
+    width:80px;     /* 50px; 50px; */
+    height: 80px;
+    filter: drop-shadow(0px 0px 6px white );
+    transition: .4s;
+    
+}
+
+.container.animated{
+    animation-name: anime;
+    animation-duration: 1s;
+    animation-delay: 0s;
+    animation-fill-mode: both;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+    
+}
+@keyframes anime{
+   0%{
+        width:25%;
+        height: auto;
+        border-radius: 50%;
+   }
+    /* 50%{
+     width: 50%;
+     height: none;
+     border-radius: 50%;
+   }  */
+    100%{
+        width:50%;
+        height: auto;
+        border-radius: 10px;
+        cursor: auto;
+    }
+}
+
+
+.container.animated .logo{
+
+    animation: logom 1s 1s both ease-in;
+}
+
+@keyframes logom{
+    from{
+        transform: translateY(130px);
+    }
+    to{
+        transform: translateY(-5px);
+    }
+}
+
+.container form{
+display: none;
+margin-top:40px;
+/* border: 2px solid blue; */
+}
+
+
+.username{
+
+	position: relative;
+    
+    width: 70%;
+    margin-left: 90px;
+    border: none;
+    border-bottom:1px solid transparent;
+    border-image: linear-gradient(45deg, rgb(23, 208, 215), rgb(4, 94, 249));
+    border-image-slice: 1;
+}
+.username label{
+	position: absolute;
+    color:  rgb(23, 208, 215);
+	top:-22px; 
+
+    transform: translateY(-50%);
+    font-size: 17px;
+    letter-spacing:0.5px;
+    transition: 0.5s;
+    text-shadow: 0px 0px 1rem  rgb(23, 208, 215);
+
+}
+
+.username input{
+	width: 100%;
+	
+	height: 30px;
+	font-size: 18px;
+	box-sizing: border-box;
+	padding-left: 5px;
+	font-family: sans-serif;
+
+
+    color: white;
+    outline: none;
+    border:none;
+    background-color: transparent;
+    
+}
+.username span{
+    display: block;
+    position: absolute;
+    text-align: center;
+    top:45px;
+    width: 100%;
+    color: red;
+}
+
+
+
+
+.psd{
+    position: relative;
+    margin-top: 70px;
+    width: 70%;
+    margin-left: 90px;
+    border-bottom: 1px solid transparent;
+    
+    border-image: linear-gradient(45deg, rgb(23, 208, 215), rgb(4, 94, 249));
+    border-image-slice: 1;
+}
+
+
+.psd label{
+    color:  rgb(23, 208, 215);
+    position: absolute;
+    font-size: 17px;
+    letter-spacing: 0.5px;
+    top: -22px;
+    text-shadow: 0px 0px 1rem  rgb(23, 208, 215);
+    
+}
+
+#psd{
+    width: 100%;
+	height: 30px;
+	font-size: 18px;
+	box-sizing: border-box;
+	padding-left: 5px;
+	font-family: sans-serif;
+    color: white;
+    border: none;
+    outline: 0;
+    background-color: transparent;
+}
+
+.psd span{
+    display: block;
+    position: absolute;
+    text-align: center;
+    top:45px;
+    width: 100%;
+    color: red;
+}
+
+#sub{
+
+	margin-top:40px;
+}
+.container.animated form{
+
+	display: block;
+	animation-name: formanime ;
+	animation-duration: 1s;
+	animation-delay: 2s;  
+    animation-fill-mode: both;
+	 
+	
+}
+@keyframes formanime{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+.but{
+    margin-top: 30px;
+}
+button{
+
+    width: 30%;
+    height: auto;
+    padding: 8px;
+    font-size: 18px;
+    letter-spacing: 1px;
+    border: 1px solid rgb(23, 208, 215);
+    background-color: transparent;
+    color: white;
+    filter: drop-shadow( 0px 3px 4em rgb(23, 208, 215));
+}
